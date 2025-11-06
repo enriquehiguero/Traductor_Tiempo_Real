@@ -1,0 +1,64 @@
+{
+  "audio": {
+    "input_device": 1,
+    "output_device": null,
+    "sample_rate": 16000,
+    "chunk_size": 4096,
+    "buffer_size": 16384,
+    "input_mode": "system"
+  },
+  "system_audio": {
+    "enabled": true,
+    "device_name": "BlackHole 2ch",
+    "auto_detect": true
+  },
+  "stt": {
+    "model_size": "medium",
+    "language": "en",
+    "use_gpu": true,
+    "use_faster_whisper": true,
+    "temperature": 0.0,
+    "vad_filter": true,
+    "vad_threshold": 0.6,
+    "min_speech_duration_ms": 500,
+    "min_silence_duration_ms": 1000
+  },
+  "translation": {
+    "language_from": "en",
+    "language_to": "es",
+    "model": "Helsinki-NLP/opus-mt-en-es",
+    "batch_size": 1,
+    "max_length": 512,
+    "num_beams": 5,
+    "no_repeat_ngram_size": 3,
+    "early_stopping": true,
+    "length_penalty": 1.0
+  },
+  "tts": {
+    "enabled": true,
+    "engine": "macos_say",
+    "voice": "Mònica",
+    "rate": 200,
+    "volume": 0.9,
+    "output_device": "TTS Output"
+  },
+  "mixer": {
+    "enabled": false,
+    "original_volume": 0.3,
+    "translation_volume": 1.0,
+    "translation_delay_ms": 0
+  },
+  "subtitle_overlay": {
+    "enabled": true,
+    "position": "bottom",
+    "font_size": 32,
+    "show_original": true,
+    "show_translation": true,
+    "auto_hide_seconds": 6
+  },
+  "performance": {
+    "target_latency_ms": 2000,
+    "log_metrics": true,
+    "log_dir": "logs"
+  }
+}

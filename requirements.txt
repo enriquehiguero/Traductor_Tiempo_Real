@@ -1,0 +1,24 @@
+# Core dependencies for Real-time Translation App
+torch>=2.0.0
+transformers>=4.21.0
+sentencepiece>=0.1.99  # Required for MarianMT translation models
+sacremoses>=0.0.53  # Recommended for MarianMT tokenization
+pyaudio>=0.2.11
+sounddevice>=0.4.6
+pyttsx3>=2.90
+pyqt6>=6.4.0
+numpy>=1.21.0
+librosa>=0.9.1
+openai-whisper>=20231106
+mlx-lm>=0.0.1 ; sys_platform == 'darwin'  # Apple Silicon specific
+
+# Additional audio processing
+SpeechRecognition>=3.8.1
+
+# System specific
+pyobjc-framework-AVFoundation ; sys_platform == 'darwin'  # For macOS audio
+pyobjc-framework-Cocoa ; sys_platform == 'darwin'
+pyobjc-framework-CoreAudio ; sys_platform == 'darwin'  # For advanced audio routing
+
+# Performance optimization
+faster-whisper>=0.10.0  # 10x faster than openai-whisper

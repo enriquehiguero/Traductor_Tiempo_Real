@@ -1,0 +1,6 @@
+.claude/
+env/
+venv/*
+.venv/
+*.pyc
+*.log
