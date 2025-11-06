@@ -115,8 +115,6 @@ This release focuses on simplifying the user interface and dramatically improvin
 - Updated "Using the Interface" section
 - Updated Troubleshooting sections
 - Updated Voice Quality section
-- Created LINKEDIN_POST.md for social media announcement
-- Created this CHANGELOG.md
 
 ### Performance
 - Latency remains <3 seconds typical
