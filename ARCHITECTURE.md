@@ -478,26 +478,4 @@ class MicrophoneCapture(SystemAudioCapture):
 
 ---
 
-## 📈 Roadmap Técnico
-
-### Versión 1.1
-- [ ] Soporte para más idiomas
-- [ ] Unit tests coverage
-- [ ] Performance optimizations
-- [ ] Better error recovery
-
-### Versión 2.0
-- [ ] Alternative TTS engines (ElevenLabs, Google)
-- [ ] Alternative STT engines (Deepgram, AssemblyAI)
-- [ ] Cloud deployment option
-- [ ] Browser extension
-
-### Versión 3.0
-- [ ] Windows/Linux support
-- [ ] Multi-speaker detection
-- [ ] Voice cloning
-- [ ] Real-time diarization
-
----
-
 **Este documento describe la arquitectura actual del sistema. Para uso práctico, consulta README.md.**
